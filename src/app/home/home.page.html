@@ -27,22 +27,16 @@
 </ion-content>
 -->
 
-<ion-header>
-
-  <ion-tool-bar>
-    <button ion-button icon-only menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-
-    <ion-title>
-      Page Title
-    </ion-title>
-
-    <ion-buttons end>
-      <button ion-button icon-only (click)="openModal()">
-        <ion-icon name="options"></ion-icon>
-      </button>
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
-  </ion-tool-bar>
-
+    <ion-title>this</ion-title>
+  </ion-toolbar>
 </ion-header>
+<ion-content>
+  <ion-button (click)="goToOtherPage()">
+      Go to OtherPage
+  </ion-button>
+</ion-content>
