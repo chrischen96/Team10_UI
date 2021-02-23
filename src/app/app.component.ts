@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {HomePage} from './home/home.page';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +6,5 @@ import {HomePage} from './home/home.page';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  root = HomePage;
   constructor() {}
 }
