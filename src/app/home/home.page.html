@@ -1,4 +1,3 @@
-<!--
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
@@ -18,172 +17,54 @@
   <div style="
   display: flex; 
   justify-content: center;
-  padding-top: 1in;">
+  padding: 1cm;">
     <ion-img 
-    style="width: 2in; height: 2in;" 
+    style="width: 1in; height: 1in;" 
     src="assets/icon/logo.jpg"></ion-img>
   </div>
 
+  <!-- List of Text Items -->
+<ion-list >
+
+  <ion-item 
+  style="height: 60px; 
+  font-size: 20px;" 
+  href="/patient-information">
+    <ion-icon name="happy-outline"></ion-icon>
+    <ion-label style="padding-left: 20%;">Patien Information</ion-label>
+  </ion-item>
+
+  <ion-item 
+  style="height: 60px; 
+  font-size: 20px;" 
+  href="/medical-details">
+    <ion-icon name="document-attach-outline"></ion-icon>
+    <ion-label style="padding-left: 20%;">Medical Details</ion-label>
+  </ion-item>
+
+  <ion-item 
+  style="height: 60px; 
+  font-size: 20px;" 
+  href="/reminder">
+    <ion-icon name="calendar-clear-outline"></ion-icon>
+    <ion-label style="padding-left: 20%;">Appointment Reminder</ion-label>
+  </ion-item>
+
+  <ion-item 
+  style="height: 60px; 
+  font-size: 20px;" 
+  href="/educational">
+    <ion-icon name="information-circle-outline"></ion-icon>
+    <ion-label style="padding-left: 20%;">About Tracheostomy</ion-label>
+  </ion-item>
+
+  <ion-item 
+  style="height: 60px; 
+  font-size: 20px;" 
+  href="/passcode">
+    <ion-icon name="lock-closed-outline"></ion-icon>
+    <ion-label style="padding-left: 20%;">Manage Passcode</ion-label>
+  </ion-item>
+</ion-list>
+
 </ion-content>
--->
-
-<ion-toolbar>
-  <ion-title>Title Only</ion-title>
-</ion-toolbar>
-
-<ion-toolbar>
-  <ion-buttons slot="start">
-    <ion-back-button></ion-back-button>
-  </ion-buttons>
-  <ion-title>Back Button</ion-title>
-</ion-toolbar>
-
-<ion-toolbar>
-  <ion-title size="small">Small Title above a Default Title</ion-title>
-</ion-toolbar>
-<ion-toolbar>
-  <ion-title>Default Title</ion-title>
-</ion-toolbar>
-
-<ion-toolbar>
-  <ion-buttons slot="secondary">
-    <ion-button>
-      <ion-icon slot="icon-only" name="person-circle"></ion-icon>
-    </ion-button>
-    <ion-button>
-      <ion-icon slot="icon-only" name="search"></ion-icon>
-    </ion-button>
-  </ion-buttons>
-  <ion-buttons slot="primary">
-    <ion-button color="secondary">
-      <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
-    </ion-button>
-  </ion-buttons>
-  <ion-title>Default Buttons</ion-title>
-</ion-toolbar>
-
-<ion-toolbar>
-  <ion-buttons slot="secondary">
-    <ion-button fill="solid">
-      <ion-icon slot="start" name="person-circle"></ion-icon>
-      Contact
-    </ion-button>
-  </ion-buttons>
-  <ion-title>Solid Buttons</ion-title>
-  <ion-buttons slot="primary">
-    <ion-button fill="solid" color="secondary">
-      Help
-      <ion-icon slot="end" name="help-circle"></ion-icon>
-    </ion-button>
-  </ion-buttons>
-</ion-toolbar>
-
-<ion-toolbar>
-  <ion-buttons slot="secondary">
-    <ion-button fill="outline">
-      <ion-icon slot="start" name="star"></ion-icon>
-      Star
-    </ion-button>
-  </ion-buttons>
-  <ion-title>Outline Buttons</ion-title>
-  <ion-buttons slot="primary">
-    <ion-button color="danger" fill="outline">
-      Edit
-      <ion-icon slot="end" name="create"></ion-icon>
-    </ion-button>
-  </ion-buttons>
-</ion-toolbar>
-
-<ion-toolbar>
-  <ion-buttons slot="secondary">
-    <ion-button>
-      Account
-    </ion-button>
-  </ion-buttons>
-  <ion-buttons slot="primary">
-    <ion-button color="danger">
-      Edit
-    </ion-button>
-  </ion-buttons>
-  <ion-title>Text Only Buttons</ion-title>
-</ion-toolbar>
-
-<ion-toolbar>
-  <ion-buttons slot="start">
-    <ion-menu-button autoHide="false"></ion-menu-button>
-
-  </ion-buttons>
-  <ion-buttons slot="secondary">
-    <ion-button>
-      <ion-icon slot="icon-only" name="star"></ion-icon>
-    </ion-button>
-  </ion-buttons>
-  <ion-title>Left side menu toggle</ion-title>
-</ion-toolbar>
-
-<ion-toolbar>
-  <ion-buttons slot="primary">
-    <ion-button (click)="clickedStar()">
-      <ion-icon slot="icon-only" name="star"></ion-icon>
-    </ion-button>
-  </ion-buttons>
-  <ion-title>Right side menu toggle</ion-title>
-  <ion-buttons slot="end">
-    <ion-menu-button autoHide="false"></ion-menu-button>
-
-  </ion-buttons>
-</ion-toolbar>
-
-<ion-toolbar>
-  <ion-buttons slot="primary">
-    <ion-button (click)="clickedSearch()">
-      <ion-icon slot="icon-only" name="search"></ion-icon>
-    </ion-button>
-  </ion-buttons>
-  <ion-searchbar placeholder="Search Favorites"></ion-searchbar>
-</ion-toolbar>
-
-<ion-toolbar>
-  <ion-segment value="all">
-    <ion-segment-button value="all">
-      All
-    </ion-segment-button>
-    <ion-segment-button value="favorites">
-      Favorites
-    </ion-segment-button>
-  </ion-segment>
-</ion-toolbar>
-
-<ion-toolbar color="secondary">
-  <ion-buttons slot="secondary">
-    <ion-button>
-      <ion-icon slot="icon-only" name="person-circle"></ion-icon>
-    </ion-button>
-    <ion-button>
-      <ion-icon slot="icon-only" name="search"></ion-icon>
-    </ion-button>
-  </ion-buttons>
-  <ion-buttons slot="primary">
-    <ion-button color="primary">
-      <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
-    </ion-button>
-  </ion-buttons>
-  <ion-title>Secondary Toolbar</ion-title>
-</ion-toolbar>
-
-<ion-toolbar color="dark">
-  <ion-buttons slot="secondary">
-    <ion-button>
-      <ion-icon slot="icon-only" name="person-circle"></ion-icon>
-    </ion-button>
-    <ion-button>
-      <ion-icon slot="icon-only" name="search"></ion-icon>
-    </ion-button>
-  </ion-buttons>
-  <ion-buttons slot="primary">
-    <ion-button color="danger">
-      <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
-    </ion-button>
-  </ion-buttons>
-  <ion-title>Dark Toolbar</ion-title>
-</ion-toolbar>

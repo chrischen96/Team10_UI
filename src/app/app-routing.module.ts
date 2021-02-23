@@ -11,6 +11,26 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'patient-information',
+    loadChildren: () => import('./patient-information/patient-information.module').then( m => m.PatientInformationPageModule)
+  },
+  {
+    path: 'medical-details',
+    loadChildren: () => import('./medical-details/medical-details.module').then( m => m.MedicalDetailsPageModule)
+  },
+  {
+    path: 'reminder',
+    loadChildren: () => import('./reminder/reminder.module').then( m => m.ReminderPageModule)
+  },
+  {
+    path: 'educational',
+    loadChildren: () => import('./educational/educational.module').then( m => m.EducationalPageModule)
+  },
+  {
+    path: 'passcode',
+    loadChildren: () => import('./passcode/passcode.module').then( m => m.PasscodePageModule)
+  },
 ];
 
 @NgModule({
