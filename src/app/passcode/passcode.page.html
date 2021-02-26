@@ -7,6 +7,32 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content fullscreen>
+  <ion-list lines="full" class="ion-no-margin">
+    <ion-list-header lines="full">
+      <ion-label>
+        Manage Passcode
+      </ion-label>
+    </ion-list-header>
 
+    <ion-item>
+      <ion-label>Old Passcode</ion-label>
+      <ion-input type="{{pwshow?'text':'password'}}" [(ngModel)]='userinfo.password' placeholder="Enter old passcode"></ion-input>
+
+    </ion-item>
+
+    <ion-item>
+      <ion-label>New Passcode</ion-label>
+      <ion-input placeholder="Enter new passcode"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Confirm Passcode</ion-label>
+      <ion-input placeholder="Enter new passcode again"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <div style="text-align: center;">
+  <ion-button color="secondary" >Confirm Change</ion-button>
+  </div>
 </ion-content>
