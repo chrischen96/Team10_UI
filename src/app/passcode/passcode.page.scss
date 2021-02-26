@@ -4,3 +4,17 @@
 .eyehide .eye-show, .eyeshow .eye-hide{
     display: none;//此元素不会被显示
 }
+.item.item-select {
+    .input-wrapper {
+        ion-select {
+            width: 200vw;
+            max-width: unset;
+ 
+            /*  
+            .select-text {
+                text-align: start;
+            }
+           */  
+        }
+    }
+}

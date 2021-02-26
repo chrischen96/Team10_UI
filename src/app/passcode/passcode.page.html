@@ -16,9 +16,8 @@
     </ion-list-header>
 
     <ion-item>
-      <ion-label>Old Passcode</ion-label>
-      <ion-input type="{{pwshow?'text':'password'}}" [(ngModel)]='userinfo.password' placeholder="Enter old passcode"></ion-input>
-
+      <ion-label fixed>Old Passcode</ion-label>
+      <ion-input type="{{pwshow?'text':'password'}}" placeholder="Enter old passcode"></ion-input>
     </ion-item>
 
     <ion-item>
@@ -33,6 +32,6 @@
   </ion-list>
 
   <div style="text-align: center;">
-  <ion-button color="secondary" >Confirm Change</ion-button>
+  <ion-button expand="block">Confirm Change</ion-button>
   </div>
 </ion-content>
